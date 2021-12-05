@@ -42,13 +42,13 @@ class Individual {
     gainImmunity() {
         if (this._status == Individual.BITTEN) {
             this._daysOfInfection++;
-            if (this._daysOfInfection >= 600) {
+            if (this._daysOfInfection >= 400) {//100 = 1 day
                 this._status = Individual.ZOMBIES;
             }
         }
         if(this._status == Individual.ZOMBIES){
             this._daysOfZombie++;
-            if(this._daysOfZombie >= 900){
+            if(this._daysOfZombie >= 1500){
                 this._status = Individual.DEAD;
             }
         }

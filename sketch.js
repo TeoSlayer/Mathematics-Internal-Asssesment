@@ -9,7 +9,7 @@ let WIDTH_POPULATION = 0;
 let WIDTH_GRAPH = 0;
 
 const SCALE = 3;
-const TIME_SCALE = 4;
+const TIME_SCALE = 8;
 
 function setup() {
     HEIGHT = windowHeight - 5;
@@ -76,17 +76,15 @@ function filterByStatus(status) {
 }
 
 function drawGraph(susceptible, BITTEN, ZOMBIES, DEAD) {
-    if (ZOMBIES != 0) {
-        translate(0, HEIGHT);
-        strokeWeight(2);
-        stroke('green');
-        point(iteration / TIME_SCALE + WIDTH_POPULATION, -ZOMBIES / SCALE);
-        stroke('black');
-        point(iteration / TIME_SCALE + WIDTH_POPULATION, -DEAD / SCALE);
-        stroke('yellow');
-        point(iteration / TIME_SCALE + WIDTH_POPULATION, -susceptible / SCALE);
-        stroke('red');
-        point(iteration / TIME_SCALE + WIDTH_POPULATION, -BITTEN / SCALE);
-        iteration++;
-    }
+    translate(0, HEIGHT);
+    strokeWeight(2);
+    stroke('green');
+    point(iteration / TIME_SCALE + WIDTH_POPULATION, -ZOMBIES / SCALE);
+    stroke('black');
+    point(iteration / TIME_SCALE + WIDTH_POPULATION, -DEAD / SCALE);
+    stroke('yellow');
+    point(iteration / TIME_SCALE + WIDTH_POPULATION, -susceptible / SCALE);
+    stroke('red');
+    point(iteration / TIME_SCALE + WIDTH_POPULATION, -BITTEN / SCALE);
+    iteration++;
 }
