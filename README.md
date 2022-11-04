@@ -1,4 +1,4 @@
-#Mathematics Internal Assesment
+# Mathematics Internal Assesment
 
 A graphic representation of the SBZD Model(Derived from the SRI Model).
 
@@ -11,7 +11,7 @@ Made with JS in JS Canvas.
 
 Stack: HTML5/CSS/VanillaJS
 
-#License
+# License
 
 MIT License
 
